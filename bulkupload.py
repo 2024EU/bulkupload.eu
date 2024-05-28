@@ -5,6 +5,7 @@ import traceback, logger, ConfigParser, os, sys
 
 def get_creds_profile(api_profile = None):
 	api_profile = api_profile or raw_input("Profile Name: ")
+	print(api_profile)
 
 	config = ConfigParser.ConfigParser()
 	config.read( os.path.join('.', 'credentials') )
